@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Application.Address.Commands.Create
+namespace Restaurants.Domain.Interfaces
 {
-    public class CreateDishCommand
+   public interface IAddressRepository
     {
     }
 }

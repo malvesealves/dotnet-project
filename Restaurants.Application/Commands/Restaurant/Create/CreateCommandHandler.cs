@@ -1,10 +1,10 @@
-﻿namespace Restaurants.Application.Address.Commands.Create
+﻿namespace Restaurants.Application.Commands.Restaurant.Create
 {
-    public class CreateRestaurantHandler
+    public class CreateCommandHandler
     {
         //private readonly IRepository<Restaurant> _repository;
 
-        //public CreateRestaurantHandler(IRepository<Restaurant> repository)
+        //public CreateRestaurantCommandHandler(IRepository<Restaurant> repository)
         //{
         //    _repository = repository;
         //}
