@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Address\Commands\Delete\" />
+    <Folder Include="Address\Commands\Update\" />
+    <Folder Include="Address\Queries\" />
+    <Folder Include="Customer\Commands\Delete\" />
+    <Folder Include="Customer\Commands\Update\" />
+    <Folder Include="Customer\Queries\" />
+    <Folder Include="Dish\Commands\Delete\" />
+    <Folder Include="Dish\Commands\Update\" />
+    <Folder Include="Dish\Queries\" />
+    <Folder Include="Restaurant\Commands\Delete\" />
+    <Folder Include="Restaurant\Commands\Update\" />
+    <Folder Include="Restaurant\Queries\" />
+  </ItemGroup>
+
+</Project>
