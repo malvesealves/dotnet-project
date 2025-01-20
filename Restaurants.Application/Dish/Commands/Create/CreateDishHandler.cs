@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Restaurants.Application.Address.Commands.Create
+﻿namespace Restaurants.Application.Address.Commands.Create
 {
-    internal class CreateDishHandler
+    public class CreateDishHandler
     {
+        //private readonly IRepository<Dish> _repository;
+
+        //public CreateDishHandler(IRepository<Dish> repository)
+        //{
+        //    _repository = repository;
+        //}
+
+        //public async Task<Result<int>> Handle(CreateDishCommand request,
+        //  CancellationToken cancellationToken)
+        //{
+        //    var newDish = new Dish(request.Name);
+        //    var createdItem = await _repository.AddAsync(newDish, cancellationToken);
+
+        //    return createdItem.Id;
+        //}
     }
 }

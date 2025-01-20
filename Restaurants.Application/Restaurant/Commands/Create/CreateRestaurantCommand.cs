@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Restaurants.Application.Address.Commands.Create
 {
-    internal class CreateRestaurantCommand
+    public class CreateRestaurantCommand
     {
+        
     }
 }
