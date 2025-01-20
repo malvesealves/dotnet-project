@@ -11,6 +11,12 @@ namespace Restaurants.WebApi.Controllers
         public RestaurantController(ILogger<RestaurantController> logger)
         {
             _logger = logger;
-        }        
+        }
+
+        [HttpGet]
+        public IActionResult GetRestaurants()
+        {
+            return Ok("GetRestaurants");
+        }
     }
 }

@@ -7,18 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Address\Commands\Delete\" />
-    <Folder Include="Address\Commands\Update\" />
-    <Folder Include="Address\Queries\" />
-    <Folder Include="Customer\Commands\Delete\" />
-    <Folder Include="Customer\Commands\Update\" />
-    <Folder Include="Customer\Queries\" />
-    <Folder Include="Dish\Commands\Delete\" />
-    <Folder Include="Dish\Commands\Update\" />
-    <Folder Include="Dish\Queries\" />
-    <Folder Include="Restaurant\Commands\Delete\" />
-    <Folder Include="Restaurant\Commands\Update\" />
-    <Folder Include="Restaurant\Queries\" />
+    <Folder Include="Commands\Address\Delete\" />
+    <Folder Include="Commands\Address\Update\" />
+    <Folder Include="Commands\Customer\Delete\" />
+    <Folder Include="Commands\Customer\Update\" />
+    <Folder Include="Commands\Dish\Delete\" />
+    <Folder Include="Commands\Dish\Update\" />
+    <Folder Include="Commands\Restaurant\Delete\" />
+    <Folder Include="Commands\Restaurant\Update\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Restaurants.Domain\Restaurants.Domain.csproj" />
   </ItemGroup>
 
 </Project>

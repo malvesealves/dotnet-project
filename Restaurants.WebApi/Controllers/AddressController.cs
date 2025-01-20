@@ -1,16 +1,27 @@
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Restaurants.Application.Commands.Address.Create;
 
 namespace Restaurants.WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AddressController : ControllerBase
+    public class AddressController(ILogger<AddressController> logger, ISender sender) : ControllerBase
     {
-        private readonly ILogger<AddressController> _logger;
-
-        public AddressController(ILogger<AddressController> logger)
+        [HttpGet]
+        public IActionResult GetAddresses()
         {
-            _logger = logger;
-        }        
+            return Ok("GetAddresses");
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<int>> CreateAddress(CreateAddressCommand command)
+        {
+            logger.LogInformation("CreateAddress endpoint accessed");
+
+            int addressId = await sender.Send(command);
+
+            return Ok(addressId);
+        }
     }
 }
