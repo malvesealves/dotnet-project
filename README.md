@@ -81,7 +81,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project presents a .NET application construction from scratch.
+This project presents a .NET application construction from scratch. This repository provides a simple real-world restaurant managing system. Docker is used to set up the RabbitMQ environment.
 
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
